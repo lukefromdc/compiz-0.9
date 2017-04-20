@@ -1,0 +1,6 @@
+config /etc/compizconfig
+usr/lib/*/compizconfig/backends/libini.so
+usr/lib/*/compiz/libccp.so
+usr/lib/*/libcompizconfig.so.0
+usr/lib/*/libcompizconfig.so.0.0.0
+usr/share/compiz/ccp.xml

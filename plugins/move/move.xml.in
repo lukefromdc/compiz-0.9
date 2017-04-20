@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compiz>
+    <plugin name="move" useBcop="true">
+	<_short>Move Window</_short>
+	<_long>Move your windows around</_long>
+	<category>Window Management</category>
+	<deps>
+	    <relation type="after">
+		<plugin>composite</plugin>
+		<plugin>opengl</plugin>
+		<plugin>decor</plugin>
+	    </relation>
+	</deps>
+	<options>
+	    <option name="initiate_button" type="button">
+		<_short>Initiate Window Move</_short>
+		<_long>Start moving window</_long>
+		<default>&lt;Alt&gt;Button1</default>
+	    </option>
+	    <option name="initiate_key" type="key">
+		<_short>Initiate Window Move</_short>
+		<_long>Start moving window</_long>
+		<default>&lt;Alt&gt;F7</default>
+	    </option>
+	    <option name="opacity" type="int">
+		<_short>Moving Window Opacity</_short>
+		<_long>Opacity level of moving windows (in percent).</_long>
+		<default>100</default>
+		<min>1</min>
+		<max>100</max>
+	    </option>
+	    <option name="key_move_inc" type="int">
+		<_short>Keyboard Move Increment</_short>
+		<_long>Move the window by this amount of pixels for every press on one of the cursor keys.</_long>
+		<default>24</default>
+		<min>1</min>
+		<max>250</max>
+	    </option>
+	    <option name="constrain_y" type="bool">
+		<_short>Constrain Y</_short>
+		<_long>Constrain y-coordinate to workspace area.</_long>
+		<default>true</default>
+	    </option>
+	    <option name="snapoff_semimaximized" type="bool">
+		<_short>Snapoff Semimaximized Windows</_short>
+		<_long>Snapoff and auto-restore semimaximized windows when dragging them.</_long>
+		<default>true</default>
+	    </option>
+	    <option name="snapoff_distance" type="int">
+		<_short>Snapoff Distance</_short>
+		<_long>Distance of pixels you have to drag a snapped semimaximized window to unsnap it.</_long>
+		<default>100</default>
+		<min>0</min>
+		<max>500</max>
+	    </option>
+	    <option name="snapback_semimaximized" type="bool">
+		<_short>Snapback Semimaximized Windows</_short>
+		<_long>Snapback and re-maximize semimaximized windows when dragging them back.</_long>
+		<default>true</default>
+	    </option>
+	    <option name="snapback_distance" type="int">
+		<_short>Snapback Distance</_short>
+		<_long>Number of pixels from top or sides to snap back semimaximized windows.</_long>
+		<default>20</default>
+		<min>0</min>
+		<max>250</max>
+	    </option>
+	    <option name="lazy_positioning" type="bool">
+		<_short>Lazy Positioning</_short>
+		<_long>Do not update the server-side position of windows until finished moving.</_long>
+		<default>false</default>
+	    </option>
+
+	    <group>
+	    <_short>Appearance</_short>
+		<option name="mode" type="int">
+		    <_short>Default Moving Window Mode</_short>
+		    <_long>Default mode used for window moving.</_long>
+		    <default>0</default>
+		    <min>0</min>
+		    <max>2</max>
+		    <desc>
+			<value>0</value>
+			<_name>Normal</_name>
+		    </desc>
+		    <desc>
+			<value>1</value>
+			<_name>Outline</_name>
+		    </desc>
+		    <desc>
+			<value>2</value>
+			<_name>Rectangle</_name>
+		    </desc>
+		</option>
+		<option name="border_color" type="color">
+		    <_short>Border Color</_short>
+		    <_long>Border color used for outline and rectangle moving modes</_long>
+		    <default>
+			<red>0xfbfb</red>
+			<green>0x8b8b</green>
+			<blue>0x0</blue>
+			<alpha>0x9f9f</alpha>
+		    </default>
+		</option>
+		<option name="fill_color" type="color">
+		    <_short>Fill Color</_short>
+		    <_long>Fill color used for rectangle moving mode</_long>
+		    <default>
+			<red>0xfbfb</red>
+			<green>0x8b8b</green>
+			<blue>0x0</blue>
+			<alpha>0x1919</alpha>
+		    </default>
+		</option>
+		<option name="blend" type="bool">
+		    <_short>Enable Transparency</_short>
+		    <_long>Enable or disable blending.</_long>
+		    <default>true</default>
+		</option>
+	    </group>
+	</options>
+    </plugin>
+</compiz>

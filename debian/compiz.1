@@ -1,0 +1,57 @@
+.TH COMPIZ 1 2015-07-17 Compiz
+
+.SH NAME
+compiz \- OpenGL window and compositing manager
+
+.SH SYNOPSIS
+.B compiz
+.RI [ options ]
+.RI [ plugins ]
+
+.SH DESCRIPTION
+.B compiz
+is a compositing window manager using OpenGL for rendering.
+
+.SH OPTIONS
+.TP
+.B \-\-debug
+Enable debug mode.
+.TP
+.BI "\-\-display " DISPLAY
+Manage the display called
+.I DISPLAY
+instead of the name obtained from the
+.I $DISPLAY
+environment variable.
+.TP
+.B \-\-help
+Shows a summary of options and exit.
+.TP
+.B \-\-keep\-desktop\-hints
+Retains existing desktop hints.
+.TP
+.B \-\-no\-auto\-add\-ccp
+Do not automatically load the Compiz config plugin (ccp).
+.TP
+.B \-\-replace
+Replaces any existing window managers on the given X display.
+.TP
+.B \-\-send\-startup\-message
+Sends a message to all connected X clientd once startup is complete.
+.TP
+.B \-\-sm\-disable
+Disables session management.
+.TP
+.BI "\-\-sm\-client\-id " ID
+Uses the given
+.I ID
+as the client ID for session management.
+.TP
+.B \-\-sync
+Makes all X calls synchronous.
+.TP
+.B \-\-version
+Prints the version of the program and exits.
+
+.SH AUTHOR
+compiz was written by David Reveman <davidr@novell.com> and others.

@@ -1,0 +1,7 @@
+debian/source_compiz.py usr/share/apport/package-hooks
+usr/bin/compiz*
+usr/lib/*/libcompiz_core.so.*
+usr/share/applications/compiz.desktop
+usr/share/compiz/core.xml
+usr/share/compiz/*.png
+usr/share/locale
