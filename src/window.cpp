@@ -6922,7 +6922,7 @@ PrivateWindow::reparent ()
      * that if need be */
 
     serverFrameGeometry.set (wa.x + (serverInput.left - border.left),
-                 wa.y + (serverInput.top - border.top),
+			     wa.y + (serverInput.top - border.top),
 			     wa.width + (serverInput.left +
 					 serverInput.right),
 			     wa.height + (serverInput.top +
